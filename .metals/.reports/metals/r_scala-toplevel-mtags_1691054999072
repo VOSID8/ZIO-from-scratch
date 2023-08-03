@@ -1,0 +1,34 @@
+id: file:///C:/Projects/ZIO-from-scratch/zio-learning/src/main/scala/Basics.scala:[768..769) in Input.VirtualFile("file:///C:/Projects/ZIO-from-scratch/zio-learning/src/main/scala/Basics.scala", "import zio.console._
+import zio.{App, ExitCode, URIO, ZIO}
+
+object ZLayersPlayground extends zio.App {
+
+    // val meaningOfLife: ZIO[Any, Nothing, Int] = ZIO.succeed(42)
+    // val favLang: ZIO[Any, Nothing, String] = ZIO.succeed("Scala")
+    // val favLang2: ZIO[Any, Nothing, String] = ZIO.succeed("Haskell")
+
+    val program = for {
+        _ <- putStrLn("Hello! What is your name?")
+        name <- getStrLn
+        _ <- putStrLn(s"Hello, ${name}, welcome to ZIO!")
+        _ <- putStrLn("What is your favorite programming language?")
+        lang <- getStrLn
+        _ <- putStrLn(s"Your favorite programming language is ${lang}")
+    } yield ()
+
+    override def run(args: List[String]): URIO[zio.ZEnv, ExitCode] = {
+        program.exitCode
+    }
+
+    object 
+}
+
+
+// import zio._
+
+// object MainApp extends ZIOAppDefault {
+//   def run = Console.printLine("Hello, World!")
+// }")
+file:///C:/Projects/ZIO-from-scratch/zio-learning/src/main/scala/Basics.scala:24: error: expected identifier; obtained rbrace
+}
+^

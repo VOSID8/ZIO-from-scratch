@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(a6ef95ec-fc15-4801-aa49-50e217b41893), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to C:\Projects\ZIO-from-scratch\zio-learning\target\scala-2.12\classes ...[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 2 s, completed 02-Aug-2023, 11:09:01 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

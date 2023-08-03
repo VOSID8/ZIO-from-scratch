@@ -1,0 +1,10 @@
+id: file:///C:/Projects/ZIO-from-scratch/zio-learning/src/main/scala/Basics.scala:[70..70) in Input.VirtualFile("file:///C:/Projects/ZIO-from-scratch/zio-learning/src/main/scala/Basics.scala", "import zio.console._
+import zio.{App, ExitCode, URIO, ZIO}
+
+object 
+
+
+")
+file:///C:/Projects/ZIO-from-scratch/zio-learning/src/main/scala/Basics.scala:7: error: expected identifier; obtained eof
+
+^

@@ -1,0 +1,73 @@
+java.lang.IndexOutOfBoundsException: 0
+occurred in the presentation compiler.
+
+action parameters:
+offset: 1809
+uri: file:///C:/Projects/ZIO-from-scratch/zio-learning/src/main/scala/Basics.scala
+text:
+import zio.console._
+import zio.{App, ExitCode, URIO, ZIO}
+
+object ZLayersPlayground extends zio.App {
+
+    // val meaningOfLife: ZIO[Any, Nothing, Int] = ZIO.succeed(42)
+    // val favLang: ZIO[Any, Nothing, String] = ZIO.succeed("Scala")
+    // val favLang2: ZIO[Any, Nothing, String] = ZIO.succeed("Haskell")
+
+    val program = for {
+        _ <- putStrLn("Hello! What is your name?")
+        name <- getStrLn
+        _ <- putStrLn(s"Hello, ${name}, welcome to ZIO!")
+        _ <- putStrLn("What is your favorite programming language?")
+        lang <- getStrLn
+        _ <- putStrLn(s"Your favorite programming language is ${lang}")
+    } yield ()
+
+    object userEmailer {
+        trait Service {
+            def notify(user: User, message: String): Task[Unit] // Task is a ZIO with Throwable as error type
+            //ZIO[Any, Throwable, Unit]
+        }
+
+        val live: ZLayer[Any,Nothing,has[userEmailer.Service]] = ZLayer.succeed(new Service {
+            override def notify(user: User, message: String) = {
+                println(s"Sending email to ${user.email} with message ${message}")
+            }
+        })
+
+        def notify(user: User, message: String): ZIO[has[userEmailer.Service], Throwable, Unit] = {
+            ZIO.accessM(hasService => hasService.get.notify(user, message))
+            // ZIO.accessM(_.get.notify(user, message))
+            // accessM is a combinator that allows us to access the environment
+            // hasService is a Has[userEmailer.Service] which is a type alias for Has[userEmailer.Service.Service]
+            // hasService.get is a Service
+        }
+
+        val sid = User("sid", "sidd@gmail.com")
+        val sidMessage = "Hello Sid!"
+
+        override def run(args: List[String]): URIO[zio.ZEnv, ExitCode] = {
+            userEmailer.notify(sid,@@
+    }
+    }
+}
+
+
+// import zio._
+
+// object MainApp extends ZIOAppDefault {
+//   def run = Console.printLine("Hello, World!")
+// }
+
+
+error stacktrace:
+scala.collection.LinearSeqOps.apply(LinearSeq.scala:117)
+	scala.collection.LinearSeqOps.apply$(LinearSeq.scala:114)
+	scala.collection.immutable.List.apply(List.scala:79)
+	dotty.tools.dotc.util.Signatures$.countParams(Signatures.scala:436)
+	dotty.tools.dotc.util.Signatures$.applyCallInfo(Signatures.scala:156)
+	dotty.tools.dotc.util.Signatures$.computeSignatureHelp(Signatures.scala:91)
+	dotty.tools.dotc.util.Signatures$.signatureHelp(Signatures.scala:61)
+	scala.meta.internal.pc.MetalsSignatures$.signatures(MetalsSignatures.scala:21)
+	scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:51)
+	scala.meta.internal.pc.ScalaPresentationCompiler.signatureHelp$$anonfun$1(ScalaPresentationCompiler.scala:371)
