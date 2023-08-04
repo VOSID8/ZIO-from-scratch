@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(0af7d980-a66f-42e0-8b74-145e9ac20503), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Projects\ZIO-from-scratch\zio-learning\target\scala-2.12\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\HorizontalCompo.scala.scala:59:23: not found: value userEmailer[0m
+[0m[[0m[31merror[0m] [0m[0m        .provideLayer(userEmailer.live)[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 04-Aug-2023, 3:08:56 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

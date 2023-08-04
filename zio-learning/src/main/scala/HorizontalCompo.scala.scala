@@ -1,0 +1,65 @@
+import zio.{ExitCode, Has, Task, ZIO, ZLayer}
+
+case class User(name: String, email: String)
+
+object UserEmailer {
+// type alias to use for other layers
+type UserEmailerEnv = Has[UserEmailer.Service]
+
+// service definition
+trait Service {
+    def notify(u: User, msg: String): Task[Unit]
+}
+
+// layer; includes service implementation
+val live: ZLayer[Any, Nothing, UserEmailerEnv] = ZLayer.succeed(new Service {
+    override def notify(u: User, msg: String): Task[Unit] =
+    Task {
+        println(s"[Email service] Sending $msg to ${u.email}")
+    }
+})
+
+// front-facing API, aka "accessor"
+def notify(u: User, msg: String): ZIO[UserEmailerEnv, Throwable, Unit] = ZIO.accessM(_.get.notify(u, msg))
+}
+
+object UserDb {
+// type alias, to use for other layers
+type UserDbEnv = Has[UserDb.Service]
+
+// service definition
+trait Service {
+    def insert(user: User): Task[Unit]
+}
+
+// layer - service implementation
+val live: ZLayer[Any, Nothing, UserDbEnv] = ZLayer.succeed {
+    new Service {
+    override def insert(user: User): Task[Unit] = Task {
+        // can replace this with an actual DB SQL string
+        println(s"[Database] insert into public.user values ('${user.name}')")
+    }
+    }
+}
+
+// accessor
+def insert(u: User): ZIO[UserDbEnv, Throwable, Unit] = ZIO.accessM(_.get.insert(u))
+}
+
+object HorizontalCompo extends zio.App {
+import UserEmailer._
+import UserDb._
+
+val sid = User("sid", "siddd@vos.com")
+val sidMessage = "Hello Sid!"
+
+val userBackendLayer: ZLayer[Any,Nothing, UserDbEnv with UserEmailerEnv] = UserEmailer.live ++ UserDb.live
+    def run(args: List[String]) = {
+        UserEmailer.notify(sid, sidMessage)
+        .provideLayer(userBackendLayer)
+        .exitCode
+    }
+
+
+}
+
