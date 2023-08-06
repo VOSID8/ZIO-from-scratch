@@ -1,0 +1,25 @@
+id: file:///C:/Projects/ZIO-from-scratch/zio-learning/src/main/scala/Fibers.scala:[346..354) in Input.VirtualFile("file:///C:/Projects/ZIO-from-scratch/zio-learning/src/main/scala/Fibers.scala", "
+import zio.{UIO, ZIO}
+
+object ZioFibers extends zio.App {
+  val program = for {
+    _ <- UIO(println("Hello from fiber!"))
+  } yield ()
+
+  val zmol: UIO[Int] = ZIO.effectTotal(42)
+
+  val showerTime = ZIO.succeed("Showering!")
+  val breakfastTime = ZIO.succeed("Breakfast!")
+  val preparingCoffee = ZIO.succeed("Preparing coffee!")
+
+  def 
+
+
+
+
+  override def run(args: List[String]): ZIO[zio.ZEnv, Nothing, ExitCode] =
+    program.exitCode
+}")
+file:///C:/Projects/ZIO-from-scratch/zio-learning/src/main/scala/Fibers.scala:20: error: expected identifier; obtained override
+  override def run(args: List[String]): ZIO[zio.ZEnv, Nothing, ExitCode] =
+  ^
