@@ -1653,3 +1653,105 @@ WARNING: Unmatched cancel notification for request id 1374
 2023.08.04 16:35:26 INFO  shutting down Metals
 2023.08.04 16:35:26 INFO  Shut down connection with build server.
 2023.08.04 16:35:26 INFO  Exiting server
+2023.08.06 16:13:15 INFO  Started: Metals version 1.0.0 in folders 'C:\Projects\ZIO-from-scratch' for client Visual Studio Code 1.81.0.
+Aug 06, 2023 4:13:15 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.20.1 by Redgate
+Aug 06, 2023 4:13:15 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Aug 06, 2023 4:13:15 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Aug 06, 2023 4:13:16 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:C:\Projects\ZIO-from-scratch\.metals\metals (H2 2.1)
+Aug 06, 2023 4:13:16 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.045s)
+Aug 06, 2023 4:13:16 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Aug 06, 2023 4:13:16 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.08.06 16:13:16 INFO  time: initialize in 0.92s
+2023.08.06 16:13:19 INFO  Attempting to connect to the build server...
+2023.08.06 16:13:19 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\ZIO-from-scratch\.scala-build\ide-options-v2.json, C:\Projects\ZIO-from-scratch)
+2023.08.06 16:13:19 WARN  No build session currently active to reload.
+2023.08.06 16:13:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\ZIO-from-scratch\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.08.06 16:13:22 INFO  no build target found for C:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\Fibers.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.08.06 16:13:24 INFO  time: code lens generation in 4.98s
+2023.08.06 16:13:24 INFO  time: code lens generation in 4.99s
+2023.08.06 16:13:25 INFO  time: Connected to build server in 5.91s
+2023.08.06 16:13:25 INFO  Connected to Build server: scala-cli v0.1.17
+2023.08.06 16:13:26 INFO  compiling project_bd2c96d2de (5 scala sources)
+2023.08.06 16:13:26 INFO  time: compiled project_bd2c96d2de in 0.43s
+2023.08.06 16:13:26 INFO  compiling project_bd2c96d2de (5 scala sources)
+2023.08.06 16:13:26 INFO  time: compiled project_bd2c96d2de in 0.16s
+2023.08.06 16:13:27 INFO  time: indexed workspace in 2.34s
+2023.08.06 16:13:28 INFO  compiling project_bd2c96d2de (5 scala sources)
+2023.08.06 16:13:29 INFO  time: compiled project_bd2c96d2de in 1.24s
+2023.08.06 16:13:29 INFO  compiling project_bd2c96d2de (5 scala sources)
+2023.08.06 16:13:29 INFO  time: compiled project_bd2c96d2de in 0.18s
+2023.08.06 16:13:35 WARN  no build target for: C:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\FibersInterupt.scala
+2023.08.06 16:13:36 INFO  Disconnecting from scala-cli session...
+2023.08.06 16:13:35 INFO  Shut down connection with build server.
+2023.08.06 16:13:35 INFO  Attempting to connect to the build server...
+2023.08.06 16:13:35 INFO  Running BSP server List(C:\Users\Siddh\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Projects\ZIO-from-scratch\.scala-build\ide-options-v2.json, C:\Projects\ZIO-from-scratch)
+2023.08.06 16:13:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Projects\ZIO-from-scratch\.metals\bsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.08.06 16:13:41 INFO  time: Connected to build server in 5.31s
+2023.08.06 16:13:41 INFO  Connected to Build server: scala-cli v0.1.17
+2023.08.06 16:13:42 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:13:42 INFO  time: compiled project_bd2c96d2de in 0.17s
+2023.08.06 16:13:42 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:13:42 INFO  time: compiled project_bd2c96d2de in 0.16s
+2023.08.06 16:13:42 INFO  time: indexed workspace in 1.48s
+2023.08.06 16:13:43 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:13:45 INFO  time: compiled project_bd2c96d2de in 1.54s
+2023.08.06 16:13:45 INFO  Refreshed build after change
+2023.08.06 16:13:49 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:13:49 INFO  time: compiled project_bd2c96d2de in 0.14s
+2023.08.06 16:14:04 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:14:04 INFO  time: compiled project_bd2c96d2de in 0.22s
+2023.08.06 16:14:25 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:14:25 INFO  time: compiled project_bd2c96d2de in 0.15s
+2023.08.06 16:14:34 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:14:34 INFO  time: compiled project_bd2c96d2de in 0.14s
+2023.08.06 16:14:38 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:14:38 INFO  time: compiled project_bd2c96d2de in 0.11s
+2023.08.06 16:14:40 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:14:40 INFO  time: compiled project_bd2c96d2de in 0.11s
+2023.08.06 16:14:42 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:14:42 INFO  time: compiled project_bd2c96d2de in 0.11s
+2023.08.06 16:14:44 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:14:44 INFO  time: compiled project_bd2c96d2de in 93ms
+2023.08.06 16:14:47 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:14:47 INFO  time: compiled project_bd2c96d2de in 0.11s
+2023.08.06 16:14:48 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:14:48 INFO  time: compiled project_bd2c96d2de in 89ms
+2023.08.06 16:14:52 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:14:52 INFO  time: compiled project_bd2c96d2de in 0.11s
+2023.08.06 16:14:56 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:14:56 INFO  time: compiled project_bd2c96d2de in 0.11s
+2023.08.06 16:14:59 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:14:59 INFO  time: compiled project_bd2c96d2de in 94ms
+2023.08.06 16:15:17 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:15:17 INFO  time: compiled project_bd2c96d2de in 0.13s
+2023.08.06 16:15:20 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:15:20 INFO  time: compiled project_bd2c96d2de in 93ms
+2023.08.06 16:15:24 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:15:24 INFO  time: compiled project_bd2c96d2de in 0.1s
+2023.08.06 16:15:25 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:15:25 INFO  time: compiled project_bd2c96d2de in 0.11s
+2023.08.06 16:15:30 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:15:30 INFO  time: compiled project_bd2c96d2de in 0.1s
+2023.08.06 16:15:35 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:15:35 INFO  time: compiled project_bd2c96d2de in 0.12s
+2023.08.06 16:16:09 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:16:09 INFO  time: compiled project_bd2c96d2de in 0.14s
+2023.08.06 16:16:47 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:16:47 INFO  time: compiled project_bd2c96d2de in 0.15s
+2023.08.06 16:17:10 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:17:10 INFO  time: compiled project_bd2c96d2de in 0.15s
+2023.08.06 16:17:27 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:17:27 INFO  time: compiled project_bd2c96d2de in 0.12s
+2023.08.06 16:17:31 INFO  compiling project_bd2c96d2de (6 scala sources)
+2023.08.06 16:17:31 INFO  time: compiled project_bd2c96d2de in 0.11s
+2023.08.06 16:17:53 INFO  Shutting down server
+2023.08.06 16:17:53 INFO  shutting down Metals
+2023.08.06 16:17:53 INFO  Shut down connection with build server.
+2023.08.06 16:17:53 INFO  Exiting server

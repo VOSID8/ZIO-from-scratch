@@ -1,16 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\Fibers.scala:29:10: not found: value bathTime[0m
-[0m[[0m[31merror[0m] [0m[0m    _ <- bathTime.debug(printThread).fork[0m
-[0m[[0m[31merror[0m] [0m[0m         ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\Fibers.scala:30:10: not found: value boilingWater[0m
-[0m[[0m[31merror[0m] [0m[0m    _ <- boilingWater.debug(printThread) } yield ()[0m
-[0m[[0m[31merror[0m] [0m[0m         ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\Fibers.scala:33:18: not found: value bathTime[0m
-[0m[[0m[31merror[0m] [0m[0m    bathFiber <- bathTime.debug(printThread).fork[0m
-[0m[[0m[31merror[0m] [0m[0m                 ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\Fibers.scala:34:21: not found: value boilingWater[0m
-[0m[[0m[31merror[0m] [0m[0m    boilingFiber <- boilingWater.debug(printThread).fork[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\FibersInterupt.scala:32:21: not found: value boilingWaterWithSleep[0m
+[0m[[0m[31merror[0m] [0m[0m    boilingFiber <- boilingWaterWithSleep.fork[0m
 [0m[[0m[31merror[0m] [0m[0m                    ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\Fibers.scala:36:27: value join is not a member of Any[0m
-[0m[[0m[31merror[0m] [0m[0m    result <- zippedFiber.join.debug(printThread)[0m
-[0m[[0m[31merror[0m] [0m[0m                          ^[0m
-[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

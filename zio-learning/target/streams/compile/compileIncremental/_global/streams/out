@@ -1,6 +1,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 40 products, 7 sources, 3 libraries[0m
-[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/SubService.scala.scala, ${BASE}/src/main/scala/Basics/HorizontalCompo.scala.scala, ${BASE}/src/main/scala/Fibers.scala, ${BASE}/src/main/scala/Basics/BasicJob.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 42 products, 8 sources, 3 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/SubService.scala.scala, ${BASE}/src/main/scala/FibersInterupt.scala, ${BASE}/src/main/scala/Basics/HorizontalCompo.scala.scala, ${BASE}/src/main/scala/Fibers.scala, ${BASE}/src/main/scala/Basics/BasicJob.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(${BASE}/src/main/scala/BasicJob.scala, ${BASE}/src/main/scala/HorizontalCompo.scala.scala), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
 [0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
