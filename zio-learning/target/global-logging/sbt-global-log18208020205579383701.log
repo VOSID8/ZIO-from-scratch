@@ -1,0 +1,35 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(8a4d5ff8-a21d-4dc3-8ad7-3f46b99c32e8), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to C:\Projects\ZIO-from-scratch\zio-learning\target\scala-2.12\classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\Basics\HorizontalCompo.scala.scala:5:8: Generated class UserEmailer$ differs only in case from userEmailer$ (defined in BasicJob.scala).[0m
+[0m[[0m[33mwarn[0m] [0m[0m  Such classes will overwrite one another on case-insensitive filesystems.[0m
+[0m[[0m[33mwarn[0m] [0m[0mobject UserEmailer {[0m
+[0m[[0m[33mwarn[0m] [0m[0m       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\Basics\HorizontalCompo.scala.scala:10:7: Generated class UserEmailer$Service differs only in case from userEmailer$Service (defined in BasicJob.scala).[0m
+[0m[[0m[33mwarn[0m] [0m[0m  Such classes will overwrite one another on case-insensitive filesystems.[0m
+[0m[[0m[33mwarn[0m] [0m[0mtrait Service {[0m
+[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\Basics\HorizontalCompo.scala.scala:15:69: Generated class UserEmailer$$anon$1 differs only in case from userEmailer$$anon$1 (defined in BasicJob.scala).[0m
+[0m[[0m[33mwarn[0m] [0m[0m  Such classes will overwrite one another on case-insensitive filesystems.[0m
+[0m[[0m[33mwarn[0m] [0m[0mval live: ZLayer[Any, Nothing, UserEmailerEnv] = ZLayer.succeed(new Service {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\SubService.scala.scala:4:12: Generated class user differs only in case from User (defined in HorizontalCompo.scala.scala).[0m
+[0m[[0m[33mwarn[0m] [0m[0m  Such classes will overwrite one another on case-insensitive filesystems.[0m
+[0m[[0m[33mwarn[0m] [0m[0mcase class user(name: String, email: String)[0m
+[0m[[0m[33mwarn[0m] [0m[0m           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\SubService.scala.scala:27:8: Generated class userDb$ differs only in case from UserDb$ (defined in HorizontalCompo.scala.scala).[0m
+[0m[[0m[33mwarn[0m] [0m[0m  Such classes will overwrite one another on case-insensitive filesystems.[0m
+[0m[[0m[33mwarn[0m] [0m[0mobject userDb {[0m
+[0m[[0m[33mwarn[0m] [0m[0m       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\SubService.scala.scala:32:11: Generated class userDb$Service differs only in case from UserDb$Service (defined in HorizontalCompo.scala.scala).[0m
+[0m[[0m[33mwarn[0m] [0m[0m  Such classes will overwrite one another on case-insensitive filesystems.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    trait Service {[0m
+[0m[[0m[33mwarn[0m] [0m[0m          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Projects\ZIO-from-scratch\zio-learning\src\main\scala\SubService.scala.scala:38:13: Generated class userDb$$anon$2 differs only in case from UserDb$$anon$2 (defined in HorizontalCompo.scala.scala).[0m
+[0m[[0m[33mwarn[0m] [0m[0m  Such classes will overwrite one another on case-insensitive filesystems.[0m
+[0m[[0m[33mwarn[0m] [0m[0m        new Service {[0m
+[0m[[0m[33mwarn[0m] [0m[0m            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m7 warnings found[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 13 s, completed 06-Aug-2023, 2:54:23 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
